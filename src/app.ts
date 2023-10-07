@@ -6,7 +6,7 @@ import cors from 'cors';
 require('dotenv').config();
 
 import api from './api';
-import {MessageResponse} from './interfaces/';
+import { MessageResponse } from './interfaces/';
 
 const app = express();
 
@@ -17,11 +17,10 @@ app.use(express.json());
 
 app.get<{}, MessageResponse>('/', (req, res) => {
   res.json({
-    message: 'Welcome to Express API' 
+    message: 'Welcome to Express API',
   });
 });
 
 app.use('/api/v1', api);
-
 
 export default app;
