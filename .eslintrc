@@ -17,6 +17,7 @@
     "camelcase": 0,
     "import/extensions": 0,
     "@typescript-eslint/no-redeclare": 0,
+    "newline-per-chained-call": ["error"],
     "prettier/prettier": ["error"]
   },
   "settings": {

@@ -1,1 +1,1 @@
-export * from './MessageResponse'
+export * from './MessageResponse';
